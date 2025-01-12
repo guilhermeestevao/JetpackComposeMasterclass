@@ -11,6 +11,8 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import test.example.jetpackcomposemasterclass.ui.state_management.number_guess.NumberGuessScreenRoot
+import test.example.jetpackcomposemasterclass.ui.state_management.todo_list.TodoListScreenRoot
 import test.example.jetpackcomposemasterclass.ui.theme.JetpackComposeMasterclassTheme
 
 class MainActivity : ComponentActivity() {
@@ -20,8 +22,7 @@ class MainActivity : ComponentActivity() {
     setContent {
       JetpackComposeMasterclassTheme {
         Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-          Greeting(
-            name = "Android",
+          TodoListScreenRoot(
             modifier = Modifier.padding(innerPadding)
           )
         }
